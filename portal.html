@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal Digital | Maxter Elite</title>
+    <meta
+      name="description"
+      content="Portal digital para administración de condominios, incidencias, mantenimiento, proveedores y reportes."
+    />
+    <link rel="icon" type="image/png" href="assets/maxter-favicon.png" />
+    <link rel="stylesheet" href="portal.css?v=portal-launch-v1" />
+  </head>
+  <body>
+    <main class="portal-shell">
+      <aside class="portal-sidebar">
+        <a class="portal-brand" href="index.html" aria-label="Volver a Maxter Elite">
+          <img src="assets/maxter-logo-horizontal.png" alt="Maxter Elite" />
+        </a>
+        <nav aria-label="Navegación del portal">
+          <a class="active" href="#resumen">Resumen</a>
+          <a href="#condominios">Condominios</a>
+          <a href="#incidencias">Incidencias</a>
+          <a href="#mantenimiento">Mantenimiento</a>
+          <a href="#proveedores">Proveedores</a>
+          <a href="#reportes">Reportes</a>
+        </nav>
+        <a class="back-link" href="index.html">Volver a la web</a>
+      </aside>
+
+      <section class="portal-main">
+        <header class="portal-topbar">
+          <div>
+            <p>Administración Digital</p>
+            <h1>Centro de Operación de Condominios</h1>
+          </div>
+          <div class="portal-actions">
+            <button type="button" data-open-modal="incident">Nueva incidencia</button>
+            <button type="button" data-open-modal="report">Generar reporte</button>
+          </div>
+        </header>
+
+        <section class="portal-hero" id="resumen">
+          <div>
+            <p class="portal-eyebrow">Portal en desarrollo</p>
+            <h2>Una plataforma para dar seguimiento real a la operación diaria.</h2>
+            <p>
+              Esta primera versión muestra cómo Maxter Elite puede centralizar condominios, incidencias, mantenimientos,
+              evidencias, proveedores y reportes para juntas o administradores.
+            </p>
+          </div>
+          <div class="access-card">
+            <span>Acceso clientes</span>
+            <strong>Próxima etapa</strong>
+            <p>Login privado para equipo Maxter Elite, juntas de condominios y administradores autorizados.</p>
+          </div>
+        </section>
+
+        <section class="metric-grid" aria-label="Indicadores operativos">
+          <article>
+            <span>Condominios</span>
+            <strong>12</strong>
+            <p>Activos en seguimiento</p>
+          </article>
+          <article>
+            <span>Incidencias</span>
+            <strong>28</strong>
+            <p>Abiertas y priorizadas</p>
+          </article>
+          <article>
+            <span>Mantenimientos</span>
+            <strong>16</strong>
+            <p>Programados este mes</p>
+          </article>
+          <article>
+            <span>Proveedores</span>
+            <strong>9</strong>
+            <p>Coordinados por servicio</p>
+          </article>
+        </section>
+
+        <section class="portal-grid">
+          <article class="panel wide" id="condominios">
+            <div class="panel-heading">
+              <div>
+                <p>Condominios</p>
+                <h2>Propiedades en operación</h2>
+              </div>
+              <button type="button">Agregar</button>
+            </div>
+            <div class="property-list">
+              <div>
+                <strong>Residencial Torre Azul</strong>
+                <span>Santo Domingo · 84 unidades · Mantenimiento preventivo</span>
+              </div>
+              <div>
+                <strong>Condominio Vista Norte</strong>
+                <span>Santiago · 42 unidades · Supervisión técnica</span>
+              </div>
+              <div>
+                <strong>Plaza Jardines</strong>
+                <span>Distrito Nacional · Activo mixto · Proveedores</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel" id="incidencias">
+            <div class="panel-heading">
+              <div>
+                <p>Incidencias</p>
+                <h2>Prioridad actual</h2>
+              </div>
+            </div>
+            <ul class="task-list">
+              <li><span class="status high"></span> Filtración en área común</li>
+              <li><span class="status medium"></span> Luminarias pendientes</li>
+              <li><span class="status low"></span> Jardinería programada</li>
+            </ul>
+          </article>
+
+          <article class="panel" id="mantenimiento">
+            <div class="panel-heading">
+              <div>
+                <p>Mantenimiento</p>
+                <h2>Plan preventivo</h2>
+              </div>
+            </div>
+            <div class="timeline">
+              <div><span>Hoy</span> Revisión de bombas y cuarto técnico</div>
+              <div><span>Vie</span> Limpieza de cisterna</div>
+              <div><span>Lun</span> Inspección eléctrica áreas comunes</div>
+            </div>
+          </article>
+
+          <article class="panel wide" id="proveedores">
+            <div class="panel-heading">
+              <div>
+                <p>Proveedores</p>
+                <h2>Control de contratistas</h2>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Proveedor</th>
+                  <th>Servicio</th>
+                  <th>Estado</th>
+                  <th>Última gestión</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ServiClean RD</td>
+                  <td>Limpieza</td>
+                  <td>Activo</td>
+                  <td>Reporte semanal</td>
+                </tr>
+                <tr>
+                  <td>ElectroMant</td>
+                  <td>Eléctrico</td>
+                  <td>En evaluación</td>
+                  <td>Cotización enviada</td>
+                </tr>
+                <tr>
+                  <td>Jardines Pro</td>
+                  <td>Áreas verdes</td>
+                  <td>Activo</td>
+                  <td>Visita programada</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel" id="reportes">
+            <div class="panel-heading">
+              <div>
+                <p>Reportes</p>
+                <h2>Entrega mensual</h2>
+              </div>
+            </div>
+            <div class="report-card">
+              <strong>Reporte operativo · Junio 2026</strong>
+              <span>Incidencias, mantenimientos, evidencias y recomendaciones.</span>
+              <button type="button">Preparar PDF</button>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p>Evidencias</p>
+                <h2>Trabajos documentados</h2>
+              </div>
+            </div>
+            <div class="evidence-grid">
+              <span>Antes</span>
+              <span>Durante</span>
+              <span>Después</span>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <dialog class="portal-modal" data-modal>
+      <form method="dialog">
+        <button class="modal-close" type="submit" aria-label="Cerrar">×</button>
+        <p class="portal-eyebrow">Demo funcional</p>
+        <h2 data-modal-title>Acción del portal</h2>
+        <p>
+          En la siguiente etapa esta acción abrirá formularios reales, guardará datos y generará trazabilidad por condominio.
+        </p>
+        <button class="modal-action" type="submit">Entendido</button>
+      </form>
+    </dialog>
+
+    <script src="portal.js?v=portal-launch-v1"></script>
+  </body>
+</html>

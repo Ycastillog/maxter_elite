@@ -712,6 +712,62 @@ figcaption {
   color: var(--muted);
 }
 
+.digital-platform {
+  display: grid;
+  grid-template-columns: 1fr 0.82fr;
+  gap: 46px;
+  align-items: center;
+  padding: 86px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--blue-deep);
+  color: white;
+}
+
+.digital-platform p:not(.eyebrow) {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.05rem;
+}
+
+.digital-panel {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.digital-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.digital-panel-header span {
+  font-weight: 850;
+}
+
+.digital-panel-header strong {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.digital-panel ul {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.digital-panel li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 .final-cta .contact-form {
   background: white;
 }
@@ -804,6 +860,7 @@ figcaption {
   .problem-band,
   .why,
   .mid-cta,
+  .digital-platform,
   .final-cta,
   .section-heading {
     grid-template-columns: 1fr;
@@ -868,6 +925,7 @@ figcaption {
   .operations-band,
   .problem-band,
   .mid-cta,
+  .digital-platform,
   .final-cta {
     padding: 64px 18px;
   }
