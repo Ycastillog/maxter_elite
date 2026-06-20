@@ -199,6 +199,14 @@ h3 {
   font-size: 1.2rem;
 }
 
+.hero-note {
+  max-width: 610px;
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.98rem;
+  font-weight: 650;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -322,9 +330,13 @@ textarea:focus {
   line-height: 1;
 }
 
+.kpi-grid h3 {
+  margin-top: 20px;
+}
+
 .kpi-grid span {
   display: block;
-  margin-top: 16px;
+  margin-top: 10px;
   color: var(--muted);
   font-weight: 700;
   max-width: 230px;
@@ -337,6 +349,60 @@ textarea:focus {
   max-width: none;
   padding-inline: max(24px, calc((100vw - var(--max)) / 2));
   background: var(--section);
+}
+
+.operations-band {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 48px;
+  align-items: start;
+  padding: 92px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.operations-intro {
+  position: sticky;
+  top: 120px;
+}
+
+.operations-intro p:not(.eyebrow),
+.section-lead {
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
+.operations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.operations-grid article {
+  min-height: 245px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #ffffff, #f8fbfc);
+}
+
+.operations-grid span {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--blue);
+  font-weight: 850;
+}
+
+.operations-grid p {
+  color: var(--muted);
 }
 
 .service-grid,
@@ -624,6 +690,28 @@ figcaption {
   background: var(--blue-deep);
 }
 
+.faq {
+  padding-top: 86px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 38px;
+}
+
+.faq-grid article {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.faq-grid p {
+  color: var(--muted);
+}
+
 .final-cta .contact-form {
   background: white;
 }
@@ -712,6 +800,7 @@ figcaption {
   }
 
   .hero,
+  .operations-band,
   .problem-band,
   .why,
   .mid-cta,
@@ -729,11 +818,17 @@ figcaption {
     padding-bottom: 0;
   }
 
+  .operations-intro {
+    position: static;
+  }
+
   .kpi-grid,
   .service-grid,
+  .operations-grid,
   .project-grid,
   .testimonial-grid,
-  .resource-grid {
+  .resource-grid,
+  .faq-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -770,6 +865,7 @@ figcaption {
   .services,
   .process,
   .resources,
+  .operations-band,
   .problem-band,
   .mid-cta,
   .final-cta {
@@ -778,9 +874,11 @@ figcaption {
 
   .kpi-grid,
   .service-grid,
+  .operations-grid,
   .project-grid,
   .testimonial-grid,
   .resource-grid,
+  .faq-grid,
   .why-list,
   .problem-map,
   .process-list,
