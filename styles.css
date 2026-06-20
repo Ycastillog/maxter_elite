@@ -89,7 +89,14 @@ a {
   color: var(--blue);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header-cta,
+.header-social,
 .btn {
   display: inline-flex;
   min-height: 44px;
@@ -105,6 +112,12 @@ a {
 .header-cta {
   background: var(--blue);
   color: white;
+}
+
+.header-social {
+  border-color: var(--line);
+  background: white;
+  color: var(--blue);
 }
 
 .nav-toggle {
@@ -225,8 +238,61 @@ h3 {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.btn.social {
+  border-color: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .btn.full {
   width: 100%;
+}
+
+.instagram-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--blue);
+  color: white;
+}
+
+.instagram-strip div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.instagram-strip span {
+  color: #a9d5e6;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.instagram-strip strong {
+  font-size: 1.35rem;
+}
+
+.instagram-strip p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.instagram-strip a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 0 18px;
+  background: white;
+  color: var(--blue);
+  font-weight: 850;
+  white-space: nowrap;
 }
 
 .hero-form,
@@ -897,7 +963,7 @@ textarea:focus {
   }
 
   .site-nav,
-  .header-cta {
+  .header-actions {
     display: none;
   }
 
@@ -911,6 +977,11 @@ textarea:focus {
 
   .site-nav.is-open a {
     padding: 10px;
+  }
+
+  .instagram-strip {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .hero,
