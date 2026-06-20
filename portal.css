@@ -232,6 +232,43 @@ h2 {
   color: var(--muted);
 }
 
+.portal-roadmap {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 18px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.roadmap-grid article {
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+
+.roadmap-grid span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--blue);
+  font-weight: 850;
+}
+
+.roadmap-grid p {
+  color: var(--muted);
+}
+
 .portal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -399,6 +436,7 @@ th {
   }
 
   .portal-hero,
+  .portal-roadmap,
   .metric-grid,
   .portal-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -419,6 +457,8 @@ th {
   .portal-sidebar nav,
   .portal-topbar,
   .portal-hero,
+  .portal-roadmap,
+  .roadmap-grid,
   .metric-grid,
   .portal-grid,
   .evidence-grid {

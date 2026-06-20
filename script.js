@@ -21,6 +21,6 @@ document.querySelectorAll("[data-contact-form]").forEach((form) => {
       .map(([key, value]) => `${key}: ${value}`)
       .join("%0D%0A");
 
-    window.location.href = `mailto:contacto@maxterelite.com?subject=Solicitud%20Maxter%20Elite&body=${details}`;
+    window.location.href = `mailto:info@maxterelite.com?subject=Solicitud%20Maxter%20Elite&body=${details}`;
   });
 });

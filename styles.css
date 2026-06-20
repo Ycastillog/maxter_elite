@@ -407,7 +407,7 @@ textarea:focus {
 
 .service-grid,
 .resource-grid,
-.testimonial-grid {
+.social-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
@@ -416,7 +416,7 @@ textarea:focus {
 
 .service-grid article,
 .resource-grid article,
-.testimonial-grid figure {
+.social-grid article {
   min-height: 230px;
   margin: 0;
   padding: 26px;
@@ -436,7 +436,7 @@ textarea:focus {
 .why-list p,
 .resource-grid p,
 .project-grid span,
-.testimonial-grid span,
+.social-grid p,
 .final-cta p,
 .mid-cta p {
   color: var(--muted);
@@ -646,25 +646,65 @@ textarea:focus {
   white-space: nowrap;
 }
 
-.testimonials {
+.social-proof {
   padding-bottom: 72px;
 }
 
-.testimonial-grid figure {
-  display: grid;
-  align-content: space-between;
+.social-grid span {
+  display: block;
+  margin-bottom: 32px;
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-blockquote {
-  margin: 0;
-  color: #243948;
-  font-size: 1.12rem;
+.social-grid a {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--blue);
+  font-weight: 850;
 }
 
-figcaption {
+.evidence-band {
   display: grid;
-  gap: 4px;
-  margin-top: 28px;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 44px;
+  align-items: start;
+  padding: 86px max(24px, calc((100vw - var(--max)) / 2));
+  background: var(--section);
+}
+
+.evidence-band p:not(.eyebrow),
+.evidence-steps p {
+  color: var(--muted);
+}
+
+.evidence-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.evidence-steps article {
+  min-height: 230px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.evidence-steps span {
+  display: inline-block;
+  margin-bottom: 42px;
+  color: var(--blue);
+  font-weight: 850;
+}
+
+.evidence-steps strong {
+  display: block;
+  font-size: 1.05rem;
 }
 
 .resources {
@@ -688,6 +728,24 @@ figcaption {
 
 .final-cta {
   background: var(--blue-deep);
+}
+
+.contact-direct {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.contact-direct a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: white;
+  font-weight: 750;
 }
 
 .faq {
@@ -860,6 +918,7 @@ figcaption {
   .problem-band,
   .why,
   .mid-cta,
+  .evidence-band,
   .digital-platform,
   .final-cta,
   .section-heading {
@@ -883,8 +942,9 @@ figcaption {
   .service-grid,
   .operations-grid,
   .project-grid,
-  .testimonial-grid,
+  .social-grid,
   .resource-grid,
+  .evidence-steps,
   .faq-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -924,6 +984,7 @@ figcaption {
   .resources,
   .operations-band,
   .problem-band,
+  .evidence-band,
   .mid-cta,
   .digital-platform,
   .final-cta {
@@ -934,8 +995,9 @@ figcaption {
   .service-grid,
   .operations-grid,
   .project-grid,
-  .testimonial-grid,
+  .social-grid,
   .resource-grid,
+  .evidence-steps,
   .faq-grid,
   .why-list,
   .problem-map,
