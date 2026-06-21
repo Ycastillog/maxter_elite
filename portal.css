@@ -40,6 +40,145 @@ a {
   text-decoration: none;
 }
 
+.portal-access {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.75fr);
+  gap: 36px;
+  align-items: center;
+  padding: 48px;
+  background:
+    linear-gradient(120deg, rgba(6, 56, 79, 0.94), rgba(0, 75, 111, 0.82)),
+    url("assets/maxter-logo-vertical-transparent.png") left 5vw center / min(42vw, 460px) no-repeat,
+    var(--blue-deep);
+  color: white;
+}
+
+.portal-access[hidden] {
+  display: none;
+}
+
+.portal-app.is-locked {
+  display: none;
+}
+
+.portal-access-intro {
+  max-width: 720px;
+}
+
+.access-logo {
+  display: inline-grid;
+  place-items: center;
+  width: min(260px, 72vw);
+  margin-bottom: 44px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: white;
+}
+
+.access-logo img {
+  display: block;
+  width: 100%;
+}
+
+.portal-access .portal-eyebrow {
+  color: #9fd3e8;
+}
+
+.portal-access h1 {
+  max-width: 780px;
+  font-size: clamp(2.2rem, 5vw, 5rem);
+}
+
+.portal-access-intro > p {
+  max-width: 620px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.08rem;
+}
+
+.access-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.access-highlights span {
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 800;
+}
+
+.portal-access-card {
+  display: grid;
+  gap: 18px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius);
+  background: white;
+  color: var(--ink);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.portal-access-card label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.portal-access-card input,
+.portal-access-card select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0 14px;
+  color: var(--ink);
+  background: #fbfcfd;
+}
+
+.portal-access-card input:focus,
+.portal-access-card select:focus {
+  outline: 3px solid rgba(0, 75, 111, 0.16);
+  border-color: var(--blue);
+  background: white;
+}
+
+.access-submit {
+  min-height: 50px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--blue);
+  color: white;
+  font-weight: 900;
+}
+
+.access-submit:hover,
+.portal-actions button:hover,
+.panel-heading button:hover,
+.report-card button:hover,
+.modal-action:hover {
+  filter: brightness(0.94);
+}
+
+.access-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.access-request {
+  justify-self: start;
+  color: var(--blue);
+  font-weight: 850;
+}
+
 .portal-shell {
   min-height: 100vh;
   display: grid;
@@ -137,6 +276,7 @@ h2 {
 }
 
 .portal-actions {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -159,6 +299,25 @@ h2 {
   background: white;
   color: var(--blue);
   border: 1px solid var(--line);
+}
+
+.session-pill {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  max-width: 240px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--blue);
+  background: white;
+  font-weight: 850;
+}
+
+.logout-button {
+  background: #102432 !important;
+  color: white !important;
+  border: 0 !important;
 }
 
 .portal-hero,
@@ -416,6 +575,11 @@ th {
 }
 
 @media (max-width: 1040px) {
+  .portal-access {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
   .portal-shell {
     grid-template-columns: 1fr;
   }
@@ -448,6 +612,14 @@ th {
 }
 
 @media (max-width: 680px) {
+  .portal-access {
+    padding: 20px;
+  }
+
+  .portal-access-card {
+    padding: 22px;
+  }
+
   .portal-main,
   .portal-sidebar {
     padding: 18px;

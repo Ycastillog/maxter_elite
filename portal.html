@@ -9,13 +9,50 @@
       content="Portal digital para administración de condominios, incidencias, mantenimiento, proveedores y reportes."
     />
     <link rel="icon" type="image/png" href="assets/maxter-favicon.png" />
-    <link rel="stylesheet" href="portal.css?v=real-contact-v1" />
+    <link rel="stylesheet" href="portal.css?v=20260621-3" />
   </head>
   <body>
-    <main class="portal-shell">
+    <section class="portal-access" data-portal-access>
+      <div class="portal-access-intro">
+        <a class="access-logo" href="index.html" aria-label="Volver a Maxter Elite">
+          <img src="assets/maxter-logo-horizontal-transparent.png" alt="Maxter Elite" />
+        </a>
+        <p class="portal-eyebrow">Portal privado</p>
+        <h1>Entrada segura para el administrador de Maxter Elite.</h1>
+        <p>
+          Acceso interno para gestionar condominios, incidencias, mantenimientos, proveedores y reportes operativos.
+        </p>
+        <div class="access-highlights" aria-label="Funciones administrativas">
+          <span>Administracion interna</span>
+          <span>Control operativo</span>
+          <span>Reportes gerenciales</span>
+          <span>Seguimiento completo</span>
+        </div>
+      </div>
+
+      <form class="portal-access-card" data-portal-login>
+        <div>
+          <p class="portal-eyebrow">Acceso al sistema</p>
+          <h2>Entrar al portal</h2>
+        </div>
+        <label>
+          Usuario administrador
+          <input name="user" type="text" autocomplete="username" placeholder="admin@maxterelite.com" required />
+        </label>
+        <label>
+          Contraseña o código de acceso
+          <input name="password" type="password" autocomplete="current-password" placeholder="Ingrese su clave" required />
+        </label>
+        <button class="access-submit" type="submit">Entrar al portal</button>
+        <p class="access-note">Demo visual: ingrese cualquier usuario administrador y clave para revisar el flujo.</p>
+        <a class="access-request" href="index.html#contacto">Solicitar acceso</a>
+      </form>
+    </section>
+
+    <main class="portal-shell portal-app is-locked" data-portal-app>
       <aside class="portal-sidebar">
         <a class="portal-brand" href="index.html" aria-label="Volver a Maxter Elite">
-          <img src="assets/maxter-logo-horizontal.png" alt="Maxter Elite" />
+          <img src="assets/maxter-logo-horizontal-transparent.png" alt="Maxter Elite" />
         </a>
         <nav aria-label="Navegación del portal">
           <a class="active" href="#resumen">Resumen</a>
@@ -35,8 +72,10 @@
             <h1>Centro de Operación de Condominios</h1>
           </div>
           <div class="portal-actions">
+            <span class="session-pill" data-session-user>Usuario</span>
             <button type="button" data-open-modal="incident">Nueva incidencia</button>
             <button type="button" data-open-modal="report">Generar reporte</button>
+            <button class="logout-button" type="button" data-logout>Salir</button>
           </div>
         </header>
 
@@ -50,9 +89,9 @@
             </p>
           </div>
           <div class="access-card">
-            <span>Acceso clientes</span>
-            <strong>Próxima etapa</strong>
-            <p>Login privado para equipo Maxter Elite, juntas de condominios y administradores autorizados.</p>
+            <span>Sesión activa</span>
+            <strong>Portal privado</strong>
+            <p>Acceso exclusivo para administracion Maxter Elite y gestion interna del servicio.</p>
           </div>
         </section>
 
@@ -82,12 +121,12 @@
         <section class="portal-roadmap">
           <div>
             <p class="portal-eyebrow">Definición del sistema real</p>
-            <h2>Roles, permisos y módulos para la siguiente etapa.</h2>
+            <h2>Modulos internos para administrar la operacion.</h2>
           </div>
           <div class="roadmap-grid">
-            <article><span>Equipo Maxter</span><p>Administra condominios, incidencias, proveedores, evidencias y reportes.</p></article>
-            <article><span>Junta / Administrador</span><p>Consulta avances, aprueba prioridades y descarga reportes periódicos.</p></article>
-            <article><span>Residentes</span><p>Reportan incidencias, adjuntan fotos y dan seguimiento al estado del caso.</p></article>
+            <article><span>Administracion</span><p>Gestiona condominios, incidencias, proveedores, evidencias y reportes.</p></article>
+            <article><span>Operaciones</span><p>Prioriza tareas, coordina proveedores y controla mantenimientos.</p></article>
+            <article><span>Direccion</span><p>Revisa indicadores, pendientes, costos y entregables por propiedad.</p></article>
           </div>
         </section>
 
@@ -226,6 +265,6 @@
       </form>
     </dialog>
 
-    <script src="portal.js?v=real-contact-v1"></script>
+    <script src="portal.js?v=20260621-3"></script>
   </body>
 </html>

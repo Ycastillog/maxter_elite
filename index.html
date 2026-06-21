@@ -3,36 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Maxter Elite | Gestión Integral para Condominios y Activos Inmobiliarios</title>
+    <title>Maxter Elite | Administración de Condominios y Activos Inmobiliarios</title>
     <meta
       name="description"
-      content="Administración, mantenimiento y operación especializada para condominios y activos inmobiliarios."
+      content="Administración de condominios, mantenimiento preventivo y operación especializada para activos inmobiliarios en Santo Domingo."
     />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="icon" type="image/png" href="assets/maxter-favicon.png" />
-    <link rel="stylesheet" href="styles.css?v=instagram-visible-v1" />
+    <link rel="stylesheet" href="styles.css?v=20260621-15" />
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#inicio" aria-label="Maxter Elite">
-        <img src="assets/maxter-logo-horizontal.png" alt="Maxter Elite" />
+        <img src="assets/maxter-logo-horizontal-transparent.png" alt="Maxter Elite" />
       </a>
       <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
         <span></span>
         <span></span>
       </button>
       <nav class="site-nav" data-nav>
+        <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#sistema">Sistema</a>
         <a href="#recursos">Recursos</a>
-        <a href="portal.html">Portal Digital</a>
-        <a href="https://www.instagram.com/maxter_elite/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="portal.html">Portal</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <div class="header-actions">
-        <a class="header-social" href="https://www.instagram.com/maxter_elite/" target="_blank" rel="noreferrer">Instagram</a>
-        <a class="header-cta" href="https://wa.me/18092079437" target="_blank" rel="noreferrer">WhatsApp</a>
-      </div>
+      <a class="header-cta" href="https://wa.me/18090000000" target="_blank" rel="noreferrer">WhatsApp</a>
     </header>
 
     <main id="inicio">
@@ -45,146 +44,141 @@
         </div>
         <div class="hero-content">
           <p class="eyebrow">Gestión y operación inmobiliaria</p>
-          <h1>Gestión Integral para Condominios y Activos Inmobiliarios</h1>
+          <h1>Gestión Integral para Condominios que exigen control real</h1>
           <p class="hero-copy">
-            Administración, mantenimiento preventivo, supervisión técnica y gestión de proveedores para comunidades que necesitan orden, continuidad y control.
+            Administración, mantenimiento y supervisión con procesos visibles para juntas, propietarios y residentes.
           </p>
-          <p class="hero-note">Diseñado para juntas de condominios, administradores y activos inmobiliarios que requieren una operación más eficiente.</p>
           <div class="hero-actions" aria-label="Acciones principales">
-            <a class="btn primary" href="#evaluacion">Solicitar Evaluación</a>
-            <a class="btn secondary" href="https://wa.me/18092079437" target="_blank" rel="noreferrer">Hablar por WhatsApp</a>
-            <a class="btn social" href="https://www.instagram.com/maxter_elite/" target="_blank" rel="noreferrer">Ver Instagram</a>
+            <a class="btn primary" href="#evaluacion"><span>Solicitar Evaluación</span></a>
+            <a class="btn secondary" href="portal.html"><span>Entrar al Portal</span></a>
+            <a class="btn secondary" href="https://wa.me/18090000000" target="_blank" rel="noreferrer"><span>Hablar por WhatsApp</span></a>
           </div>
+          <ul class="trust-list" aria-label="Beneficios principales">
+            <li>Diagnóstico operativo</li>
+            <li>Control de incidencias</li>
+            <li>Reportes para juntas</li>
+          </ul>
         </div>
-        <form class="hero-form" id="evaluacion" data-contact-form>
-          <h2>Solicite una evaluación</h2>
+        <form class="hero-form" id="evaluacion" aria-label="Solicitud de evaluación" data-contact-form>
+          <div class="form-heading">
+            <span>Evaluación inicial</span>
+            <h2>Solicite una evaluación</h2>
+            <p>Le ayudamos a identificar prioridades, riesgos y oportunidades de mejora.</p>
+          </div>
           <label>
             Nombre
-            <input name="name" autocomplete="name" required />
+            <input name="name" autocomplete="name" placeholder="Nombre y apellido" required />
           </label>
           <label>
             Teléfono
-            <input name="phone" autocomplete="tel" required />
+            <input name="phone" autocomplete="tel" inputmode="tel" placeholder="809 000 0000" required />
           </label>
           <label>
-            Tipo de propiedad
+            Tipo de condominio o propiedad
             <select name="property" required>
-              <option value="">Seleccione</option>
+              <option value="">Seleccione una opción</option>
               <option>Condominio residencial</option>
-              <option>Torre corporativa</option>
-              <option>Centro comercial</option>
-              <option>Otro activo inmobiliario</option>
+              <option>Torre de apartamentos</option>
+              <option>Residencial cerrado o complejo de villas</option>
+              <option>Condominio mixto residencial y comercial</option>
+              <option>Plaza comercial o edificio corporativo</option>
+              <option>Junta de propietarios o asociación</option>
+              <option>Otro tipo de propiedad</option>
             </select>
           </label>
-          <button class="btn primary full" type="submit">Enviar solicitud</button>
+          <button class="btn primary full" type="submit"><span>Enviar solicitud</span></button>
         </form>
-      </section>
-
-      <section class="instagram-strip" aria-label="Instagram de Maxter Elite">
-        <div>
-          <span>Instagram oficial</span>
-          <strong>@maxter_elite</strong>
-          <p>Contenido educativo, servicios, recordatorios y novedades para condominios.</p>
-        </div>
-        <a href="https://www.instagram.com/maxter_elite/" target="_blank" rel="noreferrer">Abrir Instagram</a>
       </section>
 
       <section class="section kpis" aria-labelledby="kpi-title">
         <div class="section-heading">
-          <p class="eyebrow">Capacidades operativas</p>
-          <h2 id="kpi-title">Una operación estructurada protege el activo, reduce fricción y mejora la experiencia de los residentes.</h2>
+          <p class="eyebrow">Maxter Elite en cifras</p>
+          <h2 id="kpi-title">Una operación estructurada se mide en resultados.</h2>
         </div>
         <div class="kpi-grid">
           <article>
-            <strong>360</strong>
-            <h3>Operación integral</h3>
-            <span>Operación integral para condominios y activos inmobiliarios.</span>
+            <strong>360°</strong>
+            <span>cobertura operativa</span>
           </article>
           <article>
-            <strong>PM</strong>
-            <h3>Plan preventivo</h3>
-            <span>Mantenimiento preventivo con rutinas y prioridades definidas.</span>
+            <strong>24/7</strong>
+            <span>atención a incidencias</span>
           </article>
           <article>
-            <strong>ST</strong>
-            <h3>Supervisión técnica</h3>
-            <span>Supervisión técnica de áreas comunes, equipos y proveedores.</span>
+            <strong>72h</strong>
+            <span>diagnóstico inicial</span>
           </article>
           <article>
-            <strong>GT</strong>
-            <h3>Gestión transparente</h3>
-            <span>Gestión transparente con seguimiento, control y reportes.</span>
+            <strong>1</strong>
+            <span>punto de coordinación</span>
           </article>
         </div>
+      </section>
+
+      <section class="audit-strip" aria-label="Entregables principales">
+        <article>
+          <span>01</span>
+          <strong>Levantamiento del estado actual</strong>
+          <p>Inspección inicial de operación, mantenimiento, áreas comunes y puntos críticos.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Plan de acción priorizado</strong>
+          <p>Recomendaciones ordenadas por urgencia, impacto y costo operativo.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Control de ejecución</strong>
+          <p>Seguimiento de tareas, proveedores, incidencias y evidencias de cierre.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <strong>Reportes para la toma de decisiones</strong>
+          <p>Información clara para juntas, propietarios y administradores.</p>
+        </article>
       </section>
 
       <section class="section services" id="servicios" aria-labelledby="services-title">
         <div class="section-heading compact">
           <p class="eyebrow">Servicios</p>
-          <h2 id="services-title">Administración, mantenimiento y supervisión en una sola operación.</h2>
+          <h2 id="services-title">Todo lo que una propiedad necesita para operar sin improvisación.</h2>
         </div>
         <div class="service-grid">
           <article>
             <span>01</span>
             <h3>Administración de Condominios</h3>
-            <p>Gestión operativa, financiera y administrativa para juntas de condominio, residentes y propietarios.</p>
+            <p>Gestión operativa, financiera y administrativa para comunidades residenciales.</p>
+            <b>Cuotas, reportes y control operativo</b>
           </article>
           <article>
             <span>02</span>
             <h3>Mantenimiento Preventivo</h3>
             <p>Planificación de rutinas para reducir averías, costos imprevistos y deterioro.</p>
+            <b>Calendarios, inspecciones y prioridades</b>
           </article>
           <article>
             <span>03</span>
             <h3>Mantenimiento Correctivo</h3>
-            <p>Respuesta organizada ante incidencias técnicas, operativas o de infraestructura, con trazabilidad del caso.</p>
+            <p>Respuesta organizada ante incidencias técnicas, operativas o de infraestructura.</p>
+            <b>Incidencias, seguimiento y cierre</b>
           </article>
           <article>
             <span>04</span>
             <h3>Supervisión Técnica</h3>
-            <p>Control y seguimiento de instalaciones, equipos, áreas comunes, rutinas críticas y contratistas.</p>
+            <p>Control y seguimiento de instalaciones, equipos, áreas comunes y contratistas.</p>
+            <b>Rondas, evidencias y control de calidad</b>
           </article>
           <article>
             <span>05</span>
             <h3>Gestión de Proveedores</h3>
-            <p>Coordinación, evaluación y control de contratistas para asegurar cumplimiento, tiempos y calidad.</p>
+            <p>Coordinación, evaluación y control de contratistas para asegurar cumplimiento.</p>
+            <b>Cotizaciones, ejecución y evaluación</b>
           </article>
           <article>
             <span>06</span>
             <h3>Operación Integral</h3>
-            <p>Soluciones 360 para comunidades, activos inmobiliarios y espacios comerciales que requieren continuidad operativa.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="operations-band" aria-labelledby="operations-title">
-        <div class="operations-intro">
-          <p class="eyebrow">Modelo operativo</p>
-          <h2 id="operations-title">De mantenimiento reactivo a una administración con control.</h2>
-          <p>
-            Maxter Elite estructura la operación diaria del condominio para que cada incidencia, proveedor y rutina tenga seguimiento claro.
-          </p>
-        </div>
-        <div class="operations-grid">
-          <article>
-            <span>01</span>
-            <h3>Levantamiento inicial</h3>
-            <p>Revisión de áreas comunes, equipos críticos, proveedores activos y prioridades de mantenimiento.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Plan de operación</h3>
-            <p>Organización de rutinas, responsables, tiempos de respuesta y controles para la junta o administración.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Seguimiento documentado</h3>
-            <p>Registro de incidencias, evidencias, avances y coordinación con contratistas o personal técnico.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Reportes periódicos</h3>
-            <p>Información clara para tomar decisiones, priorizar inversiones y mantener transparencia operativa.</p>
+            <p>Soluciones 360 para comunidades, activos inmobiliarios y espacios comerciales.</p>
+            <b>Una sola coordinación para todo el activo</b>
           </article>
         </div>
       </section>
@@ -205,7 +199,7 @@
           </ul>
           <div class="arrow" aria-hidden="true"></div>
           <ul class="positive-list" aria-label="Resultados esperados">
-            <li>Operación estructurada</li>
+              <li>Operación estructurada</li>
             <li>Mantenimiento planificado</li>
             <li>Transparencia administrativa</li>
             <li>Mayor valorización del activo</li>
@@ -226,29 +220,109 @@
           <div class="why-list">
             <article>
               <h3>Supervisión continua</h3>
-              <p>Seguimiento operativo para detectar riesgos, incidencias y deterioros antes de que escalen.</p>
+              <p>Seguimiento operativo para detectar riesgos antes de que se conviertan en crisis.</p>
+              <span>Inspecciones programadas y alertas tempranas.</span>
             </article>
             <article>
               <h3>Atención personalizada</h3>
-              <p>Comunicación clara con juntas, administradores, residentes, propietarios y proveedores.</p>
+              <p>Comunicación clara con juntas, administradores, residentes y proveedores.</p>
+              <span>Un canal ordenado para resolver y documentar.</span>
             </article>
             <article>
               <h3>Gestión transparente</h3>
-              <p>Procesos documentados, reportes periódicos y control administrativo para decisiones con información.</p>
+              <p>Procesos documentados, reportes periódicos y control administrativo.</p>
+              <span>Trazabilidad para cada decisión operativa.</span>
             </article>
             <article>
               <h3>Mejora continua</h3>
               <p>Planes de acción orientados a eficiencia, seguridad y conservación del activo.</p>
+              <span>Priorización por impacto y conservación del valor.</span>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="operating-system" id="sistema" aria-labelledby="system-title">
+        <div class="system-copy">
+          <p class="eyebrow">Sistema Maxter Elite</p>
+          <h2 id="system-title">Administración visible, medible y controlada.</h2>
+          <p>
+            Los mejores administradores compiten con escala, tecnología y servicio. Maxter Elite lo traduce a
+            una operación cercana: incidencias trazables, reportes claros y decisiones basadas en prioridades.
+          </p>
+          <div class="system-actions">
+            <a class="btn primary" href="#evaluacion"><span>Evaluar mi propiedad</span></a>
+            <a class="btn secondary" href="#proceso"><span>Ver metodología</span></a>
+          </div>
+        </div>
+        <div class="control-panel" aria-label="Panel de control operativo">
+          <div class="panel-top">
+            <span>Panel operativo</span>
+            <strong>Estado general: Controlado</strong>
+          </div>
+          <div class="panel-grid">
+            <article>
+              <span>Incidencias</span>
+              <strong>12</strong>
+              <small>8 cerradas · 4 en seguimiento</small>
+            </article>
+            <article>
+              <span>Mantenimiento</span>
+              <strong>94%</strong>
+              <small>rutinas ejecutadas</small>
+            </article>
+            <article>
+              <span>Proveedores</span>
+              <strong>6</strong>
+              <small>contratos activos</small>
+            </article>
+            <article>
+              <span>Reportes</span>
+              <strong>30d</strong>
+              <small>ciclo de comunicación</small>
+            </article>
+          </div>
+          <ul class="panel-list">
+            <li><span></span>Bitácora de incidencias y evidencias</li>
+            <li><span></span>Calendario preventivo por áreas</li>
+            <li><span></span>Resumen financiero y prioridades</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section standards" aria-labelledby="standards-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Estándar superior</p>
+          <h2 id="standards-title">Lo que debe exigir una junta moderna.</h2>
+        </div>
+        <div class="standards-grid">
+          <article>
+            <span>Respuesta</span>
+            <h3>Canal claro para incidencias</h3>
+            <p>Recepción, clasificación, seguimiento y cierre documentado para evitar que los problemas se pierdan.</p>
+          </article>
+          <article>
+            <span>Transparencia</span>
+            <h3>Reportes que se entienden</h3>
+            <p>Información operativa y administrativa preparada para tomar decisiones, no para llenar archivos.</p>
+          </article>
+          <article>
+            <span>Prevención</span>
+            <h3>Mantenimiento con calendario</h3>
+            <p>Rutinas preventivas por área, proveedor y prioridad para reducir deterioro y gastos urgentes.</p>
+          </article>
+          <article>
+            <span>Control</span>
+            <h3>Proveedores evaluados</h3>
+            <p>Coordinación, cumplimiento, evidencias y revisión de desempeño para sostener la calidad del servicio.</p>
+          </article>
         </div>
       </section>
 
       <section class="section projects" id="proyectos" aria-labelledby="projects-title">
         <div class="section-heading compact">
           <p class="eyebrow">Proyectos y clientes</p>
-          <h2 id="projects-title">Casos listos para documentar resultados reales por propiedad.</h2>
-          <p class="section-lead">Al incorporar clientes reales, cada caso debe mostrar evidencia: necesidad inicial, servicio ejecutado y mejora obtenida.</p>
+          <h2 id="projects-title">Presencia profesional en propiedades que requieren control operativo.</h2>
         </div>
         <div class="project-grid">
           <article>
@@ -257,12 +331,12 @@
               alt="Torre residencial"
             />
             <div>
-              <p>Nombre del proyecto</p>
-              <h3>Condominio residencial</h3>
-              <ul class="project-details">
-                <li><strong>Tipo:</strong> Torre multifamiliar</li>
-                <li><strong>Servicio:</strong> Administración y mantenimiento preventivo</li>
-                <li><strong>Resultado:</strong> Rutinas de seguimiento y control de incidencias</li>
+              <p>Condominio residencial</p>
+              <h3>Torre multifamiliar</h3>
+              <span>Santo Domingo · Administración y mantenimiento preventivo</span>
+              <ul>
+                <li>Rutinas preventivas</li>
+                <li>Gestión de incidencias</li>
               </ul>
             </div>
           </article>
@@ -272,12 +346,12 @@
               alt="Centro comercial"
             />
             <div>
-              <p>Nombre del proyecto</p>
-              <h3>Activo comercial</h3>
-              <ul class="project-details">
-                <li><strong>Tipo:</strong> Plaza de servicios</li>
-                <li><strong>Servicio:</strong> Operación, proveedores y supervisión técnica</li>
-                <li><strong>Resultado:</strong> Coordinación centralizada de contratistas</li>
+              <p>Activo comercial</p>
+              <h3>Plaza de servicios</h3>
+              <span>Operación, proveedores y supervisión técnica</span>
+              <ul>
+                <li>Control de proveedores</li>
+                <li>Supervisión técnica</li>
               </ul>
             </div>
           </article>
@@ -287,30 +361,30 @@
               alt="Edificio corporativo"
             />
             <div>
-              <p>Nombre del proyecto</p>
+              <p>Edificio corporativo</p>
               <h3>Propiedad mixta</h3>
-              <ul class="project-details">
-                <li><strong>Tipo:</strong> Edificio corporativo</li>
-                <li><strong>Servicio:</strong> Áreas comunes y mantenimiento correctivo</li>
-                <li><strong>Resultado:</strong> Respuesta estructurada ante incidencias</li>
+              <span>Control de áreas comunes y mantenimiento correctivo</span>
+              <ul>
+                <li>Áreas comunes</li>
+                <li>Mantenimiento correctivo</li>
               </ul>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section process" aria-labelledby="process-title">
+      <section class="section process" id="proceso" aria-labelledby="process-title">
         <div class="section-heading compact">
           <p class="eyebrow">Proceso de trabajo</p>
-          <h2 id="process-title">De la evaluación inicial a reportes periódicos para la junta.</h2>
+          <h2 id="process-title">De la evaluación inicial a la supervisión continua.</h2>
         </div>
         <ol class="process-list">
-          <li><span>01</span>Diagnóstico</li>
-          <li><span>02</span>Evaluación técnica</li>
-          <li><span>03</span>Plan de acción</li>
-          <li><span>04</span>Implementación</li>
-          <li><span>05</span>Supervisión continua</li>
-          <li><span>06</span>Reportes periódicos</li>
+          <li><span>01</span><strong>Diagnóstico</strong><em>Revisión del estado actual y puntos críticos.</em></li>
+          <li><span>02</span><strong>Evaluación técnica</strong><em>Priorización de riesgos, costos y oportunidades.</em></li>
+          <li><span>03</span><strong>Plan de acción</strong><em>Ruta de trabajo clara para junta y administración.</em></li>
+          <li><span>04</span><strong>Implementación</strong><em>Coordinación de tareas, equipos y proveedores.</em></li>
+          <li><span>05</span><strong>Supervisión continua</strong><em>Seguimiento operativo y control de calidad.</em></li>
+          <li><span>06</span><strong>Reportes periódicos</strong><em>Resultados documentados para decidir mejor.</em></li>
         </ol>
       </section>
 
@@ -318,173 +392,131 @@
         <div>
           <p class="eyebrow">Evaluación operativa</p>
           <h2 id="mid-cta-title">Conozca el estado real de su propiedad.</h2>
-          <p>Agende una revisión para identificar riesgos, prioridades de mantenimiento, proveedores críticos y oportunidades de mejora.</p>
+          <p>Agende una revisión para identificar riesgos, prioridades y oportunidades de mejora.</p>
         </div>
         <form class="inline-form" data-contact-form>
           <input name="email" type="email" placeholder="Correo corporativo" required />
-          <button class="btn primary" type="submit">Solicitar contacto</button>
+          <button class="btn primary" type="submit"><span>Solicitar contacto</span></button>
         </form>
       </section>
 
-      <section class="section social-proof" aria-labelledby="social-title">
+      <section class="section testimonials" aria-labelledby="testimonials-title">
         <div class="section-heading compact">
-          <p class="eyebrow">Presencia digital</p>
-          <h2 id="social-title">Una marca activa, educativa y enfocada en condominios.</h2>
-          <p class="section-lead">Mientras llegan testimonios y evidencias reales autorizadas, la comunicación de Maxter Elite ya muestra enfoque en prevención, seguridad, limpieza y operación eficiente.</p>
+          <p class="eyebrow">Testimonios</p>
+          <h2 id="testimonials-title">Confianza construida con seguimiento y resultados.</h2>
         </div>
-        <div class="social-grid">
-          <article>
-            <span>Instagram</span>
-            <h3>@maxter_elite</h3>
-            <p>Contenido educativo sobre mantenimiento preventivo, condominios seguros, limpieza profesional y servicios integrales.</p>
-            <a href="https://www.instagram.com/maxter_elite/" target="_blank" rel="noreferrer">Ver Instagram</a>
-          </article>
-          <article>
-            <span>Contacto directo</span>
-            <h3>809-207-9437</h3>
-            <p>Canal principal para solicitar evaluación, coordinar información y recibir orientación sobre administración de condominios.</p>
-            <a href="https://wa.me/18092079437" target="_blank" rel="noreferrer">Escribir por WhatsApp</a>
-          </article>
-          <article>
-            <span>Correo</span>
-            <h3>info@maxterelite.com</h3>
-            <p>Vía formal para solicitudes comerciales, propuestas, documentos y comunicación institucional.</p>
-            <a href="mailto:info@maxterelite.com">Enviar correo</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="evidence-band" aria-labelledby="evidence-title">
-        <div>
-          <p class="eyebrow">Evidencias reales</p>
-          <h2 id="evidence-title">Preparado para mostrar trabajos, residenciales y resultados reales.</h2>
-          <p>Cuando Maxter Elite envíe fotos autorizadas, esta sección se convertirá en una galería de confianza con antes, durante y después.</p>
-        </div>
-        <div class="evidence-steps">
-          <article><span>01</span><strong>Residenciales reales</strong><p>Fotos de fachadas, áreas comunes y espacios administrados.</p></article>
-          <article><span>02</span><strong>Trabajos realizados</strong><p>Mantenimiento preventivo, correctivo, limpieza y supervisión técnica.</p></article>
-          <article><span>03</span><strong>Resultados obtenidos</strong><p>Evidencia visual, descripción del problema y mejora lograda.</p></article>
+        <div class="testimonial-grid">
+          <figure>
+            <blockquote>
+              "Maxter Elite organizó el mantenimiento y nos ayudó a tener mayor control de incidencias y proveedores."
+            </blockquote>
+            <figcaption>
+              <strong>Nombre del cliente</strong>
+              <span>Miembro de junta · Condominio residencial</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <blockquote>
+              "La diferencia está en la supervisión. Ahora recibimos seguimiento y reportes con mayor claridad."
+            </blockquote>
+            <figcaption>
+              <strong>Nombre del cliente</strong>
+              <span>Administrador · Proyecto inmobiliario</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="section resources" id="recursos" aria-labelledby="resources-title">
-        <div class="section-heading compact">
-          <p class="eyebrow">Centro de Recursos</p>
-          <h2 id="resources-title">Educación para juntas, administradores y propietarios.</h2>
+        <div class="section-heading resource-heading">
+          <div>
+            <p class="eyebrow">Centro de Recursos</p>
+            <h2 id="resources-title">Guías prácticas para tomar mejores decisiones operativas.</h2>
+          </div>
+          <p>
+            Ideas accionables para juntas, administradores y propietarios que quieren reducir incidencias,
+            controlar costos y proteger el valor del inmueble.
+          </p>
         </div>
         <div class="resource-grid">
           <article>
+            <span class="resource-type">Guía</span>
             <p>Mantenimiento</p>
-            <h3>Preventivo vs. Correctivo: cuál le cuesta menos al condominio</h3>
-            <a href="#contacto">Leer recurso</a>
+            <h3>Preventivo vs. correctivo: cuál le cuesta menos al condominio</h3>
+            <small>Lectura de 6 min · Incluye señales de alerta</small>
+            <a href="#contacto">Solicitar guía</a>
           </article>
           <article>
+            <span class="resource-type">Checklist</span>
             <p>Valorización</p>
             <h3>5 cosas que aumentan el valor de un condominio</h3>
-            <a href="#contacto">Leer recurso</a>
+            <small>Checklist para inspección de áreas comunes</small>
+            <a href="#contacto">Solicitar checklist</a>
           </article>
           <article>
+            <span class="resource-type">Diagnóstico</span>
             <p>Operación</p>
             <h3>Señales de que su propiedad necesita una operación más estructurada</h3>
-            <a href="#contacto">Leer recurso</a>
+            <small>Preguntas clave antes de contratar administración</small>
+            <a href="#contacto">Solicitar diagnóstico</a>
           </article>
-        </div>
-      </section>
-
-      <section class="section faq" aria-labelledby="faq-title">
-        <div class="section-heading compact">
-          <p class="eyebrow">Preguntas clave</p>
-          <h2 id="faq-title">Lo que una junta necesita aclarar antes de cambiar su operación.</h2>
-        </div>
-        <div class="faq-grid">
-          <article>
-            <h3>¿Maxter Elite solo da mantenimiento?</h3>
-            <p>No. La propuesta integra administración, supervisión técnica, gestión de proveedores, mantenimiento preventivo y seguimiento operativo.</p>
-          </article>
-          <article>
-            <h3>¿Pueden evaluar el estado actual del condominio?</h3>
-            <p>Sí. El primer paso es una evaluación para identificar riesgos, incidencias recurrentes, proveedores críticos y prioridades.</p>
-          </article>
-          <article>
-            <h3>¿Cómo se mantiene la transparencia?</h3>
-            <p>Con procesos documentados, reportes periódicos y comunicación clara para juntas, residentes y administradores.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="digital-platform" aria-labelledby="digital-title">
-        <div>
-          <p class="eyebrow">Administración digital</p>
-          <h2 id="digital-title">La web queda lista para crecer hacia un portal de condominios.</h2>
-          <p>
-            Maxter Elite puede centralizar incidencias, mantenimiento, proveedores, evidencias y reportes en un mismo entorno digital.
-          </p>
-        </div>
-        <div class="digital-panel">
-          <div class="digital-panel-header">
-            <span>Portal Maxter Elite</span>
-            <strong>Beta</strong>
-          </div>
-          <ul>
-            <li>Panel de condominios y unidades</li>
-            <li>Registro de incidencias y seguimiento</li>
-            <li>Evidencias fotográficas por trabajo</li>
-            <li>Reportes para juntas y administradores</li>
-          </ul>
-          <a class="btn primary full" href="portal.html">Ver Portal Digital</a>
         </div>
       </section>
 
       <section class="final-cta" id="contacto" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Contacto</p>
-          <h2 id="contact-title">¿Su condominio necesita más control operativo?</h2>
+          <h2 id="contact-title">¿Necesita una administración más eficiente?</h2>
           <p>
-            Solicite una evaluación inicial y convierta la operación diaria en un sistema más ordenado, transparente y preventivo.
+            Permita que Maxter Elite se encargue de la operación mientras usted se enfoca en los resultados.
           </p>
+          <ul class="contact-points">
+            <li>Respuesta inicial en menos de 24 horas laborables</li>
+            <li>Evaluación adaptada al tipo de propiedad</li>
+            <li>Propuesta con prioridades operativas claras</li>
+          </ul>
           <div class="hero-actions">
-            <a class="btn primary" href="mailto:info@maxterelite.com">Solicitar propuesta</a>
-            <a class="btn secondary" href="https://wa.me/18092079437" target="_blank" rel="noreferrer">Contactar por WhatsApp</a>
-          </div>
-          <div class="contact-direct">
-            <a href="tel:+18092079437">809-207-9437</a>
-            <a href="mailto:info@maxterelite.com">info@maxterelite.com</a>
-            <a href="https://www.instagram.com/maxter_elite/" target="_blank" rel="noreferrer">@maxter_elite</a>
+            <a class="btn primary" href="mailto:contacto@maxterelite.com"><span>Solicitar propuesta</span></a>
+            <a class="btn secondary" href="https://wa.me/18090000000" target="_blank" rel="noreferrer"><span>Contactar por WhatsApp</span></a>
           </div>
         </div>
         <form class="contact-form" data-contact-form>
           <label>
             Nombre
-            <input name="name" required />
+            <input name="name" autocomplete="name" required />
           </label>
           <label>
             Correo
-            <input name="email" type="email" required />
+            <input name="email" type="email" autocomplete="email" required />
           </label>
           <label>
             Mensaje
             <textarea name="message" rows="4" required></textarea>
           </label>
-          <button class="btn primary full" type="submit">Enviar mensaje</button>
+          <button class="btn primary full" type="submit"><span>Enviar mensaje</span></button>
         </form>
       </section>
     </main>
 
+    <a class="floating-whatsapp" href="https://wa.me/18090000000" target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp">
+      WhatsApp
+    </a>
+
     <footer class="site-footer">
       <div>
-        <img src="assets/maxter-logo-horizontal.png" alt="Maxter Elite" />
+        <img src="assets/maxter-logo-horizontal-transparent.png" alt="Maxter Elite" />
         <p>Maxter Elite © 2026 | Gestión y Operación Inmobiliaria</p>
       </div>
       <nav aria-label="Enlaces del footer">
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="portal.html">Portal Digital</a>
+        <a href="portal.html">Portal administrativo</a>
         <a href="#contacto">Contacto</a>
         <a href="https://www.instagram.com/maxter_elite/" target="_blank" rel="noreferrer">Instagram</a>
       </nav>
       <span class="site-credit">Desarrollado por <strong>YC Systems</strong></span>
     </footer>
 
-    <script src="script.js?v=instagram-visible-v1"></script>
+    <script src="script.js?v=20260621-15"></script>
   </body>
 </html>
