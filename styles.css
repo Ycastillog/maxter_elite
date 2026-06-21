@@ -848,6 +848,55 @@ textarea {
   box-shadow: 0 0 0 4px rgba(184, 138, 45, 0.18);
 }
 
+.system-integration {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.system-integration article {
+  min-height: 245px;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.system-integration span {
+  color: #b9e5f5;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.system-integration h3 {
+  margin: 0;
+  color: white;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.12;
+}
+
+.system-integration p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.system-integration strong {
+  align-self: end;
+  display: block;
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  font-size: 0.98rem;
+}
+
 .standards {
   padding-top: 96px;
 }
@@ -1554,6 +1603,7 @@ figcaption {
   .kpi-grid,
   .audit-strip,
   .service-grid,
+  .system-integration,
   .standards-grid,
   .project-grid,
   .testimonial-grid,
@@ -1658,6 +1708,7 @@ figcaption {
   .kpi-grid,
   .audit-strip,
   .service-grid,
+  .system-integration,
   .standards-grid,
   .project-grid,
   .testimonial-grid,

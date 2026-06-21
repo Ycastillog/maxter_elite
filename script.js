@@ -4,6 +4,7 @@ const header = document.querySelector("[data-header]");
 const navLinks = Array.from(document.querySelectorAll(".site-nav a[href^='#']"));
 const floatingWhatsApp = document.querySelector(".floating-whatsapp");
 const resourcesSection = document.querySelector("#recursos");
+const systemSection = document.querySelector("#sistema");
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
@@ -21,7 +22,11 @@ const setHeaderState = () => {
   if (floatingWhatsApp) {
     const nearFooter = window.innerHeight + window.scrollY > document.body.scrollHeight - 260;
     const pastResources = resourcesSection ? window.scrollY > resourcesSection.offsetTop - 420 : false;
-    floatingWhatsApp.classList.toggle("is-hidden", nearFooter || pastResources);
+    const overSystem =
+      systemSection &&
+      systemSection.getBoundingClientRect().top < window.innerHeight - 120 &&
+      systemSection.getBoundingClientRect().bottom > 160;
+    floatingWhatsApp.classList.toggle("is-hidden", nearFooter || pastResources || overSystem);
   }
 };
 
@@ -70,6 +75,8 @@ const scrollToHash = () => {
   if (!window.location.hash) return;
   const target = document.querySelector(window.location.hash);
   target?.scrollIntoView({ behavior: "auto", block: "start" });
+  setHeaderState();
+  setActiveLink();
 };
 
 window.addEventListener("load", () => {
