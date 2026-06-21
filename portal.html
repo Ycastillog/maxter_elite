@@ -9,7 +9,7 @@
       content="Portal digital para administración de condominios, incidencias, mantenimiento, proveedores y reportes."
     />
     <link rel="icon" type="image/png" href="assets/maxter-favicon.png" />
-    <link rel="stylesheet" href="portal.css?v=20260621-3" />
+    <link rel="stylesheet" href="portal.css?v=20260621-5" />
   </head>
   <body>
     <section class="portal-access" data-portal-access>
@@ -79,19 +79,30 @@
           </div>
         </header>
 
-        <section class="portal-hero" id="resumen">
+        <section class="portal-hero admin-command" id="resumen">
           <div>
-            <p class="portal-eyebrow">Portal en desarrollo</p>
-            <h2>Una plataforma para dar seguimiento real a la operación diaria.</h2>
+            <p class="portal-eyebrow">Administracion digital</p>
+            <h2>Centro de mando para operar condominios con control diario.</h2>
             <p>
-              Esta primera versión muestra cómo Maxter Elite puede centralizar condominios, incidencias, mantenimientos,
-              evidencias, proveedores y reportes para juntas o administradores.
+              Vista ejecutiva para decidir rapido: prioridades abiertas, mantenimientos proximos, proveedores activos,
+              reportes pendientes y alertas por propiedad.
             </p>
+            <div class="command-strip" aria-label="Resumen administrativo">
+              <span><strong>97%</strong> cumplimiento operativo</span>
+              <span><strong>4</strong> prioridades criticas</span>
+              <span><strong>2</strong> reportes por entregar</span>
+            </div>
           </div>
-          <div class="access-card">
-            <span>Sesión activa</span>
-            <strong>Portal privado</strong>
-            <p>Acceso exclusivo para administracion Maxter Elite y gestion interna del servicio.</p>
+          <div class="executive-card">
+            <div>
+              <span>Estado general</span>
+              <strong>Operacion bajo control</strong>
+            </div>
+            <ul>
+              <li><span></span> Incidencias criticas asignadas</li>
+              <li><span></span> Mantenimientos de la semana programados</li>
+              <li><span></span> Evidencias listas para revision</li>
+            </ul>
           </div>
         </section>
 
@@ -115,6 +126,36 @@
             <span>Proveedores</span>
             <strong>9</strong>
             <p>Coordinados por servicio</p>
+          </article>
+        </section>
+
+        <section class="admin-focus" aria-label="Foco administrativo">
+          <article>
+            <div class="panel-heading">
+              <div>
+                <p>Prioridad de hoy</p>
+                <h2>Acciones que requieren decision</h2>
+              </div>
+              <button type="button">Ver todo</button>
+            </div>
+            <div class="decision-list">
+              <div><span class="status high"></span><strong>Autorizar reparacion de bomba</strong><em>Torre Azul · vence hoy</em></div>
+              <div><span class="status medium"></span><strong>Aprobar cotizacion electrica</strong><em>Vista Norte · 2 proveedores comparados</em></div>
+              <div><span class="status low"></span><strong>Validar evidencia de jardineria</strong><em>Plaza Jardines · fotos cargadas</em></div>
+            </div>
+          </article>
+          <article>
+            <div class="panel-heading">
+              <div>
+                <p>Salud administrativa</p>
+                <h2>Control por area</h2>
+              </div>
+            </div>
+            <div class="health-list">
+              <div><span>Operaciones</span><strong>97%</strong><progress max="100" value="97"></progress></div>
+              <div><span>Reportes</span><strong>88%</strong><progress max="100" value="88"></progress></div>
+              <div><span>Proveedores</span><strong>92%</strong><progress max="100" value="92"></progress></div>
+            </div>
           </article>
         </section>
 
@@ -265,6 +306,6 @@
       </form>
     </dialog>
 
-    <script src="portal.js?v=20260621-3"></script>
+    <script src="portal.js?v=20260621-5"></script>
   </body>
 </html>
